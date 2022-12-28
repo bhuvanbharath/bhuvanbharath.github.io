@@ -1,5 +1,5 @@
 ---
-title: About Garth
+title: About Me
 ---
 
 A really basic theme for Jekyll, using the official Jekyll theme implementation.
