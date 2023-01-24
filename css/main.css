@@ -20,31 +20,31 @@ p {
 }
 h1 {
 	font-size: 65px;
-	color: #2d3033;
+	color: #000000;
 }
 h2 {
 	font-size: 40px;
-	color: #2d3033;
+	color: #000000;
 }
 h3 {
 	font-size: 28px;
-	color: #2d3033;
+	color: #000000;
 	font-weight: 300;
 }
 h4 {
 	font-size: 22px;
-	color: #2d3033;
+	color: #000000;
 	font-weight: 400;
 }
 h5 {
 	font-size: 14px;
-	color: #2d3033;
+	color: #000000;
 	text-transform: uppercase;
 	font-weight: 700;
 }
 .btn {
 	background-color: #3bc492;
-	color: #fff;
+	color: #000000;
 	font-size: 13px;
 	font-weight: 600;
 	letter-spacing: 5px;
@@ -57,7 +57,7 @@ h5 {
 }
 .btn:hover, .btn:focus {
 	background-color: #3d3d3d;
-	color: #fff;
+	color: #000000;
 }
 .btn-large {
 	padding: 15px 40px;
@@ -78,7 +78,7 @@ a:hover, a:focus {
 body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
-	color: #6c7279;
+	color: #000000;
 }
 ul, ol {
 	margin: 0;
@@ -147,15 +147,14 @@ ul li {
 	display: inline-block;
 }
 .navigation a {
-	color: rgba(255, 255, 255, 0.75);
-	font-size: 13px;
+	color: #3d3d3d;
+	font-size: 16px;
 	font-weight: 400;
 	margin-left: 40px;
 	letter-spacing: 3px;
-	text-transform: uppercase;
 }
 .navigation a:hover, .navigation a.active {
-	color: #fff;
+	color: #000000;
 }
 .nav-toggle {
 	display: none;
@@ -216,7 +215,7 @@ ul li {
 	transition-duration: 0s;
 }
 .nav-toggle span {
-	background-color: #fff;
+	background-color: #000000;
 	bottom: auto;
 	display: inline-block;
 	height: 3px;
@@ -232,7 +231,7 @@ ul li {
 	transform: translateX(-50%) translateY(-50%);
 }
 .nav-toggle span:before, .nav-toggle span:after {
-	background-color: #fff;
+	background-color: #000000;
 	content: "";
 	height: 100%;
 	position: absolute;
@@ -279,7 +278,7 @@ ul li {
 	background-color: rgba(255, 255, 255, 0);
 }
 .nav-toggle.close-nav span:before, .nav-toggle.close-nav span:after {
-	background-color: #fff;
+	background-color: #000000;
 }
 .nav-toggle.close-nav span:before {
 	-moz-transform: translateY(0) rotate(45deg);
@@ -298,20 +297,21 @@ ul li {
 -------------------------------------------------------------------------------*/
 
 .banner {
-	background-color: #65349c;
+	background-color: #D4D2CE;
 	min-height: 750px;
 }
 .banner-text {
-	padding-top: 28%;
+	padding-top: 3%;
 }
 .banner-text h1 {
-	color: #fff;
+	color: #000000;
 	font-family: "Roboto Slab", sans-serif;
 	font-size: 80px;
 	font-weight: 700;
+	text-align: left;
 }
 .banner-text p {
-	color: #fff;
+	color: #000000;
 	font-size: 19px;
 	font-weight: 400;
 	letter-spacing: 3px;
@@ -333,9 +333,9 @@ ul li {
 	Works
 -------------------------------------------------------------------------------*/
 .work {
-  -moz-box-shadow: 0 0 0 1px #fff;
-  -webkit-box-shadow: 0 0 0 1px #fff;
-  box-shadow: 0 0 0 1px #fff;
+  -moz-box-shadow: 0 0 0 1px #000000;
+  -webkit-box-shadow: 0 0 0 1px #000000;
+  box-shadow: 0 0 0 1px #000000;
 
   overflow: hidden;
   position: relative;
@@ -372,7 +372,7 @@ ul li {
     -webkit-transition: all, 0.5s;
     transition: all, 0.5s; }
   .work h5, .work p {
-    color: #fff;
+    color: #000000;
     margin: 0;
     opacity: 0; }
   .work h5 {
@@ -444,7 +444,7 @@ ul li {
 	Hire me
 -------------------------------------------------------------------------------*/
 .hireme {
-	background-color: #fafafa;
+	background-color: #000000;
 }
 .hireme h3 {
 	font-family: "Roboto", sans-serif;
@@ -453,7 +453,7 @@ ul li {
 	margin-top: 0;
 }
 .hireme p {
-	color: #2d3033;
+	color: #000000;
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -486,7 +486,7 @@ ul li {
 .footer .footer-share li {
 	background: #3d3d3d none repeat scroll 0 0;
 	border-radius: 50%;
-	color: #ffffff;
+	color: #000000;
 	width: 26px;
 	height: 26px;
 	border-radius: 50%;
@@ -496,7 +496,7 @@ ul li {
 	float: none;
 }
 .footer .footer-share a {
-	color: #fff;
+	color: #000000;
 }
 .footer .fa-heart {
 	color: #e84545;
@@ -518,7 +518,7 @@ ul li {
 }
 
 .innerbanner-text p {
-	color: #fff;
+	color: #000000;
 	font-family: "Roboto Slab", sans-serif;
 	font-size: 36px;
 	font-weight: 400;
@@ -588,7 +588,7 @@ margin-top:50px;
 
 .conForm .submitBnt {
 	background:#3bc492;
-	color: #fff;
+	color: #000000;
 		padding: 15px 40px;
 	font-size: 13px;
 	font-weight: 600;
@@ -602,7 +602,7 @@ margin-top:50px;
 }
 .conForm .submitBnt:hover {
 	background:#3d3d3d;
-	color:#fff;
+	color:#000000;
 }
 .error_message {
     color: #ff675f;
