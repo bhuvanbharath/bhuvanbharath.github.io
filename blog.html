@@ -32,17 +32,31 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .post {
-            margin-bottom: 40px;
+        .post-list {
+            list-style-type: none;
+            padding: 0;
         }
-        .post-title {
-            font-size: 24px;
+        .post-item {
+            display: flex;
             margin-bottom: 10px;
+            align-items: baseline;
         }
         .post-date {
+            flex: 0 0 100px;
             color: #666;
             font-size: 14px;
-            margin-bottom: 10px;
+        }
+        .post-title {
+            flex: 1;
+            font-size: 16px;
+            margin: 0;
+        }
+        .post-title a {
+            color: #0000EE;
+            text-decoration: none;
+        }
+        .post-title a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -55,19 +69,14 @@
     </header>
 
     <main>
-        <!-- <article class="post">
-            <h2 class="post-title">First Blog Post</h2>
-            <div class="post-date">July 28, 2024</div>
-            <p>This is the content of your first blog post. You can write about your thoughts, experiences, or any topic that interests you.</p>
-        </article>
-
-        <article class="post">
-            <h2 class="post-title">Second Blog Post</h2>
-            <div class="post-date">July 25, 2024</div>
-            <p>This is the content of your second blog post. Continue to share your ideas and insights with your readers.</p>
-        </article> -->
-        writing...
-        <!-- Add more blog posts as needed -->
+        <ul class="post-list">
+            <li class="post-item">
+                <span class="post-date">11 Oct, 2024</span>
+                <h2 class="post-title"><a href="rnt.html">what i took away from ratan tata</a></h2>
+            </li>
+           
+            <!-- Add more list items for other blog posts -->
+        </ul>
     </main>
 </body>
 </html>
