@@ -45,7 +45,7 @@ as far as my career is concerned, I've already built 5 years of experience in CA
 outside of my career goals, here are some personal objectives I want to stay committed to this year:
 
 - keep up the momentum I've already built by dedicating at least 1.5 hours a day, five days a week, to fitness in any form. the goal is simply to stay active every day.
-- build a personolized diet program that helps meet the daily protein intake and other necessary nutients.
+- build a personolized diet program that helps meet the daily protein intake and other necessary nutrients.
 - increase my clean days streak to a minimum of 90 days.
 - interact with more people to expand my social circle and build confidence in asking people out if I'm interested.
 - ~~set up a monthly investment plan and stick to it consistently.~~

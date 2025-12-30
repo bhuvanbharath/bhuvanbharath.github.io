@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <style>
         @import url("https://use.typekit.net/czv4jia.css");
         body {
@@ -70,6 +71,13 @@
                     return;
                 }
                 const markdown = await response.text();
+                // Extract first markdown heading as title
+                const match = markdown.match(/^#\s+(.+)$/m);
+                if (match) {
+                    document.title = match[1] + " | blog";
+                } else {
+                    document.title = "Post | blog";
+                }
                 contentEl.innerHTML = marked.parse(markdown);
             } catch (err) {
                 contentEl.innerHTML = '<p>Error loading post.</p>';
