@@ -31,7 +31,7 @@ for 2026, i’ll focus primarily on career growth, along with a few personal goa
 ### 1. Jan - Mar
 **<u>primary:</u>**
 - [office chores] complete the development of _#app1_ and _#app2_ and get them production-ready. document everything—**bugs and fixes, architecture** and **key accomplishments**.
-- post at least three tutorials on creo automation.
+- post at least **three tutorials** on creo automation.
 - get a **four-wheeler driving license**.
 - purchase a separate **medical insurance** for family members, apart from the corporate one.
 
@@ -43,13 +43,13 @@ for 2026, i’ll focus primarily on career growth, along with a few personal goa
 ### 2. Apr - Jun
 **<u>primary:</u>**
 - [office chores] complete the development of _#app3_ and get it ready for production. document the project—**bugs and fixes, architecture** and **accomplishments**.
-- post **six creo tutorials** (two per month).
+- post **six tutorials** (two per month) on Creo automation.
 
 **<u>secondary:</u>**
 - explore NX automation through Siemens courses or by directly going through the API documentation and building an understanding.
 - pick up a new read from my existing _sci-fi collection_.
 
-### 3. jul - sep
+### 3. Jul - Sep
 **<u>primary:</u>**
 - complete the course or build strong fundamentals in **NX automation**. create hands-on projects integrating **NX** and **PLM**.
 - create content applying computational geometry algorithms to real-life use cases.
@@ -59,5 +59,5 @@ for 2026, i’ll focus primarily on career growth, along with a few personal goa
 - explore **PLM automation** through official courses or by diving into the API documentation and experimenting with it.
 - ...
 
-### 4. oct - dec
+### 4. Oct - Dec
 -- yet to plan --
