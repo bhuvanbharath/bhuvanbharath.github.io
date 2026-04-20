@@ -28,26 +28,31 @@ it was a good year. not extraordinary, not disappointing either. i managed to do
 
 for 2026, i’ll focus primarily on career growth, along with a few personal goals. i plan to divide the year into four quarters and set priorities for each. at the end of every quarter, i’ll revisit and update this page.
 
-### 1. Jan - Mar
-- <span style="color:#0074D9">[work]</span> complete the development of _#app1_ and _#app2_ and get them production-ready. document everything—**bugs and fixes, architecture** and **key accomplishments**.
-- post at least **three tutorials** on Creo automation.
-- get a **four-wheeler driving license**.
-- purchase a separate **medical insurance** for family members, apart from the corporate one.
-- <span style="color:#0074D9">[work]</span> prepare the architecture and development plan for _#app3_ so it’s ready to begin development in the coming days.
-- finish the _current read_.
-- build a _personalized diet plan_ that helps meet daily protein intake and other necessary nutrients.
+## 1. Jan - Mar
+### Done
+- get a **four-wheeler driving license**. - me on my way to get a quote for the RB19 from Red Bull (⌐■_■)
+- purchase a separate **medical insurance** for family members, apart from the corporate one. - finally got my mom covered under health insurance. \_/\\_
+- finish the _current read_. - completed _2001: a space odyssey_. coincidentally, i finished the book while watching _project hail mary_ and as _artemis ii_ was happening.
 
-### 2. Apr - Jun
+### In Progress
+- build a _personalized diet plan_ that helps meet daily protein intake and other necessary nutrients. - i dont think i am/will do this :\
+- <span style="color:#0074D9">[work]</span> complete the development of _#app1_ and _#app2_ and get them production-ready. document everything—**bugs and fixes, architecture** and **key accomplishments**. - hopefully i will complete the #app1 development by **april**.
+
+### Deferred
+- post at least **three tutorials** on Creo automation.
+- <span style="color:#0074D9">[work]</span> prepare the architecture and development plan for _#app3_ so it’s ready to begin development in the coming days.
+
+## 2. Apr - Jun
 - <span style="color:#0074D9">[work]</span> complete the development of _#app3_ and get it ready for production. document the project—**bugs and fixes, architecture** and **accomplishments**.
 - post **six tutorials** (two per month) on Creo automation.
 - explore NX automation through Siemens courses or by directly going through the API documentation and building an understanding.
 - pick up a new read from my existing _sci-fi collection_.
 
-### 3. Jul - Sep
+## 3. Jul - Sep
 - complete the course or build strong fundamentals in **NX automation**. create hands-on projects integrating **NX** and **PLM**.
 - create content applying computational geometry algorithms to real-life use cases.
 - explore **PLM automation** through official courses or by diving into the API documentation and experimenting with it.
 - ...
 
-### 4. Oct - Dec
+## 4. Oct - Dec
 -- yet to plan --
