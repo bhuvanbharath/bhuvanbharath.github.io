@@ -1,90 +1,15 @@
 // Configure each album below. Put photos in images/gallery/<id>/.
 // id, title, folder and description are album metadata.
 // cover is optional (the first photo is used); photos/captions are optional.
-const albums = [
-    {
-        id: "photowalk_blr",
-        title: "Photowalk, Bengaluru",
-        description: "Moments from a photowalk in Bengaluru",
-        folder: "images/gallery/photowalk_blr"
-        // cover: "images/gallery/photowalk_blr/BBT02879.jpg",
-        // captions: {
-        //     "BBT02879.jpg": "Morning in Bengaluru"
-        // }
-    }
-];
-
-const GITHUB_OWNER = "bhuvanbharath";
-const GITHUB_REPOSITORY = "bhuvanbharath.github.io";
-const GITHUB_BRANCH = "main";
-const imageExtensionPattern = /\.(jpe?g|png|webp|gif|avif)$/i;
-
-function filenameLabel(filename) {
-    return filename
-        .replace(/\.[^.]+$/, "")
-        .replace(/[_-]+/g, " ")
-        .replace(/\s+/g, " ")
-        .trim();
-}
-
-async function discoverAlbumPhotos(album) {
-    if (album.photos) {
-        return album.photos.map((photo, index) => {
-            if (typeof photo === "string") {
-                return {
-                    src: photo,
-                    alt: `${album.title}, photo ${index + 1}`,
-                    caption: album.captions?.[photo.split("/").pop()] || ""
-                };
-            }
-
-            return {
-                src: photo.src,
-                alt: photo.alt || `${album.title}, photo ${index + 1}`,
-                caption: photo.caption || album.captions?.[photo.src.split("/").pop()] || ""
-            };
-        });
-    }
-
-    const folder = album.folder || `images/gallery/${album.id}`;
-    const apiUrl = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPOSITORY}/contents/${folder}?ref=${GITHUB_BRANCH}`;
-    const response = await fetch(apiUrl);
-
-    if (!response.ok) {
-        throw new Error(`Could not read album folder: ${folder}`);
-    }
-
-    const entries = await response.json();
-    const photos = entries
-        .filter((entry) => entry.type === "file" && imageExtensionPattern.test(entry.name))
-        .sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true, sensitivity: "base" }))
-        .map((entry) => {
-            const label = filenameLabel(entry.name);
-            return {
-                src: `${folder}/${encodeURI(entry.name)}`,
-                alt: `${album.title} — ${label}`,
-                caption: album.captions?.[entry.name] || ""
-            };
-        });
-
-    if (!photos.length) {
-        throw new Error(`No photos found in album folder: ${folder}`);
-    }
-
-    return photos;
-}
+let albums = [];
 
 async function prepareAlbums() {
-    await Promise.all(albums.map(async (album) => {
-        try {
-            album.photos = await discoverAlbumPhotos(album);
-            if (!album.cover) album.cover = album.photos[0].src;
-        } catch (error) {
-            console.error(error);
-            album.photos = [];
-            album.cover = album.cover || "";
-        }
-    }));
+    const response = await fetch("js/gallery-manifest.json", { cache: "no-store" });
+    if (!response.ok) {
+        throw new Error("Gallery manifest not found. Run generate_gallery_manifest.py.");
+    }
+
+    albums = await response.json();
 }
 
 const albumsView = document.querySelector("#albums-view");
@@ -197,9 +122,20 @@ lightbox.addEventListener("click", (event) => {
 });
 
 document.addEventListener("keydown", (event) => {
+    if (event.key === "PrintScreen" ||
+        ((event.ctrlKey || event.metaKey) && ["s", "u", "p"].includes(event.key.toLowerCase()))) {
+        event.preventDefault();
+    }
+
     if (!lightbox.open || !currentAlbum) return;
     if (event.key === "ArrowLeft") document.querySelector("#lightbox-prev").click();
     if (event.key === "ArrowRight") document.querySelector("#lightbox-next").click();
+});
+
+document.addEventListener("contextmenu", (event) => {
+    if (event.target.closest(".album-card, .photo-button, .lightbox")) {
+        event.preventDefault();
+    }
 });
 
 window.addEventListener("popstate", () => {

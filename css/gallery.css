@@ -178,3 +178,19 @@ h1 {
     .lightbox figure { max-width: calc(100vw - 84px); }
     .lightbox-arrow { font-size: 38px; }
 }
+
+.photo-button img,
+.album-card img,
+.lightbox figure img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
+}
+
+.album-card,
+.photo-button,
+.lightbox figure {
+    -webkit-user-select: none;
+    user-select: none;
+}
