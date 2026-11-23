@@ -3,80 +3,95 @@
     "id": "photowalk_blr",
     "title": "Photowalk, Bengaluru",
     "description": "Moments from a photowalk in Bengaluru",
-    "cover": "images/gallery/photowalk_blr/BBT02879.jpg",
+    "cover": "images/gallery/_previews/photowalk_blr/BBT02879_cover.webp",
     "photos": [
       {
         "src": "images/gallery/photowalk_blr/BBT02879.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT02879_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT02879",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT02894.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT02894_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT02894",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT02898.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT02898_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT02898",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT02927-2.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT02927-2_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT02927 2",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT02934-2.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT02934-2_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT02934 2",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03006.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03006_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03006",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03007.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03007_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03007",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03015.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03015_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03015",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03018.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03018_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03018",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03019.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03019_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03019",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03037.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03037_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03037",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03048.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03048_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03048",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03085.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03085_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03085",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03143-2.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03143-2_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03143 2",
         "caption": ""
       },
       {
         "src": "images/gallery/photowalk_blr/BBT03149-2.jpg",
+        "preview": "images/gallery/_previews/photowalk_blr/BBT03149-2_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03149 2",
         "caption": ""
       }

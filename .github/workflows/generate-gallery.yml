@@ -1,0 +1,54 @@
+name: Generate gallery previews
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "images/gallery/**/*.jpg"
+      - "images/gallery/**/*.jpeg"
+      - "images/gallery/**/*.png"
+      - "images/gallery/**/*.webp"
+      - "images/gallery/**/*.gif"
+      - "images/gallery/**/*.avif"
+      - "js/gallery-albums.json"
+      - "generate_gallery_manifest.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-gallery
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install image generator dependency
+        run: python -m pip install Pillow
+
+      - name: Generate previews and manifest
+        run: python generate_gallery_manifest.py
+
+      - name: Commit generated gallery files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/gallery-manifest.json images/gallery/_previews
+          if git diff --cached --quiet; then
+            echo "Gallery previews are already current."
+            exit 0
+          fi
+          git commit -m "Generate gallery previews [skip ci]"
+          git push

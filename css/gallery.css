@@ -121,6 +121,8 @@ h1 {
     padding: 0;
     background: transparent;
     cursor: zoom-in;
+    content-visibility: auto;
+    contain-intrinsic-size: 300px 400px;
 }
 
 .photo-button img {

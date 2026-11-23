@@ -19,14 +19,20 @@ async function prepareAlbums() {
 
         const isSafePhotoPath = (photo) =>
             typeof photo?.src === "string" &&
-            /^images\/gallery\/[a-zA-Z0-9_-]+\/[^<>"\\]+$/i.test(photo.src);
+            /^images\/gallery\/([_a-zA-Z0-9-]+\/)?[^<>"\\]+$/i.test(photo.src);
 
-        if (!isSafePhotoPath({ src: album.cover })) return false;
-        if (!Array.isArray(album.photos) || !album.photos.every(isSafePhotoPath)) return false;
+        const isSafePreviewPath = (src) =>
+            typeof src === "string" &&
+            /^images\/gallery\/_previews\/[_a-zA-Z0-9-]+\/[^<>"\\]+$/i.test(src);
+
+        if (!isSafePhotoPath({ src: album.cover }) && !isSafePreviewPath(album.cover)) return false;
+        if (!Array.isArray(album.photos) || !album.photos.every((photo) =>
+            isSafePhotoPath(photo) && isSafePreviewPath(photo.preview))) return false;
 
         album.description = typeof album.description === "string" ? album.description : "";
         album.photos = album.photos.map((photo, index) => ({
             src: photo.src,
+            preview: photo.preview,
             alt: typeof photo.alt === "string" ? photo.alt : `${album.title}, photo ${index + 1}`,
             caption: typeof photo.caption === "string" ? photo.caption : ""
         }));
@@ -73,6 +79,7 @@ function renderAlbums() {
         image.src = album.cover;
         image.alt = "";
         image.loading = "lazy";
+        image.decoding = "async";
 
         const title = document.createElement("h2");
         title.textContent = album.title;
@@ -101,9 +108,10 @@ function openAlbum(albumId, updateHash = true) {
         button.className = "photo-button";
         button.setAttribute("aria-label", photo.alt || `Open photo ${index + 1}`);
         const image = document.createElement("img");
-        image.src = photo.src;
+        image.src = photo.preview;
         image.alt = photo.alt || "";
         image.loading = "lazy";
+        image.decoding = "async";
         button.append(image);
         button.addEventListener("click", () => openLightbox(index));
         photoGrid.append(button);
@@ -134,7 +142,14 @@ function showPhoto() {
     const photo = currentAlbum.photos[currentPhotoIndex];
     lightboxImage.src = photo.src;
     lightboxImage.alt = photo.alt || "";
+    lightboxImage.decoding = "async";
     lightboxCaption.textContent = photo.caption || "";
+
+    [-1, 1].forEach((offset) => {
+        const index = (currentPhotoIndex + offset + currentAlbum.photos.length) % currentAlbum.photos.length;
+        const preload = new Image();
+        preload.src = currentAlbum.photos[index].src;
+    });
 }
 
 backButton.addEventListener("click", () => showAlbums());
