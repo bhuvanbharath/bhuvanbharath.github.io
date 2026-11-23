@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvan's Gallery</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">bhuvan</a>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="blog.html">blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="albums-view" aria-label="Photo albums">
+            <h1>gallery</h1>
+            <div id="album-grid" class="album-grid"></div>
+        </section>
+
+        <section id="album-view" class="album-view" aria-label="Selected album" hidden>
+            <button id="back-button" class="back-button" type="button">← albums</button>
+            <h1 id="album-title"></h1>
+            <p id="album-description" class="album-description"></p>
+            <div id="photo-grid" class="photo-grid"></div>
+        </section>
+    </main>
+
+    <dialog id="lightbox" class="lightbox">
+        <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close photo">×</button>
+        <button id="lightbox-prev" class="lightbox-arrow lightbox-prev" type="button" aria-label="Previous photo">‹</button>
+        <figure>
+            <img id="lightbox-image" alt="">
+            <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <button id="lightbox-next" class="lightbox-arrow lightbox-next" type="button" aria-label="Next photo">›</button>
+    </dialog>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>
