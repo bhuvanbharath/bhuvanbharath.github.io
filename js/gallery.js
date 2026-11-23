@@ -9,7 +9,30 @@ async function prepareAlbums() {
         throw new Error("Gallery manifest not found. Run generate_gallery_manifest.py.");
     }
 
-    albums = await response.json();
+    const manifest = await response.json();
+    if (!Array.isArray(manifest)) {
+        throw new Error("Gallery manifest must contain an album array.");
+    }
+
+    albums = manifest.filter((album) => {
+        if (!album || typeof album.id !== "string" || typeof album.title !== "string") return false;
+
+        const isSafePhotoPath = (photo) =>
+            typeof photo?.src === "string" &&
+            /^images\/gallery\/[a-zA-Z0-9_-]+\/[^<>"\\]+$/i.test(photo.src);
+
+        if (!isSafePhotoPath({ src: album.cover })) return false;
+        if (!Array.isArray(album.photos) || !album.photos.every(isSafePhotoPath)) return false;
+
+        album.description = typeof album.description === "string" ? album.description : "";
+        album.photos = album.photos.map((photo, index) => ({
+            src: photo.src,
+            alt: typeof photo.alt === "string" ? photo.alt : `${album.title}, photo ${index + 1}`,
+            caption: typeof photo.caption === "string" ? photo.caption : ""
+        }));
+
+        return true;
+    });
 }
 
 const albumsView = document.querySelector("#albums-view");
@@ -45,11 +68,19 @@ function renderAlbums() {
         card.type = "button";
         card.className = "album-card";
         card.setAttribute("aria-label", `Open ${album.title}`);
-        card.innerHTML = `
-            <img src="${album.cover}" alt="" loading="lazy">
-            <h2>${album.title}</h2>
-            <p>${album.photos.length} photos</p>
-        `;
+
+        const image = document.createElement("img");
+        image.src = album.cover;
+        image.alt = "";
+        image.loading = "lazy";
+
+        const title = document.createElement("h2");
+        title.textContent = album.title;
+
+        const count = document.createElement("p");
+        count.textContent = `${album.photos.length} photos`;
+
+        card.append(image, title, count);
         card.addEventListener("click", () => openAlbum(album.id));
         albumGrid.append(card);
     });

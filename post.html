@@ -49,7 +49,8 @@
 
     <main id="content"></main>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="js/vendor/marked.min.js"></script>
+    <script src="js/vendor/purify.min.js"></script>
     <script>
         async function loadPost() {
             const params = new URLSearchParams(location.search);
@@ -57,30 +58,36 @@
             const contentEl = document.getElementById('content');
 
             if (!postId) {
-                contentEl.innerHTML = '<p>No post specified.</p>';
+                contentEl.textContent = 'No post specified.';
                 return;
             }
 
-            contentEl.innerHTML = '<p>Loading…</p>';
+            contentEl.textContent = 'Loading…';
 
             try {
-                const url = './posts/' + postId + '.md';
+                const url = './posts/' + encodeURIComponent(postId) + '.md';
                 const response = await fetch(url);
                 if (!response.ok) {
-                    contentEl.innerHTML = `<p>Post not found.</p>`;
+                    contentEl.textContent = 'Post not found.';
                     return;
                 }
                 const markdown = await response.text();
-                // Extract first markdown heading as title
+
                 const match = markdown.match(/^#\s+(.+)$/m);
                 if (match) {
                     document.title = match[1] + " | blog";
                 } else {
                     document.title = "Post | blog";
                 }
-                contentEl.innerHTML = marked.parse(markdown);
+
+                const rendered = marked.parse(markdown);
+                contentEl.innerHTML = DOMPurify.sanitize(rendered, {
+                    USE_PROFILES: { html: true },
+                    FORBID_TAGS: ['style', 'form', 'input', 'textarea', 'button', 'iframe', 'object', 'embed'],
+                    FORBID_ATTR: ['style']
+                });
             } catch (err) {
-                contentEl.innerHTML = '<p>Error loading post.</p>';
+                contentEl.textContent = 'Error loading post.';
                 console.error(err);
             }
         }
