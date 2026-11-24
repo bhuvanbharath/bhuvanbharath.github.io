@@ -8,7 +8,7 @@
 * { box-sizing: border-box; }
 
 body {
-    max-width: 800px;
+    max-width: 1080px;
     margin: 0 auto;
     padding: 20px;
     background: var(--background);
@@ -51,8 +51,8 @@ h1 {
 
 .album-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 28px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 38px 18px;
 }
 
 .album-card {
@@ -123,6 +123,7 @@ h1 {
     cursor: zoom-in;
     content-visibility: auto;
     contain-intrinsic-size: 300px 400px;
+    overflow: hidden;
 }
 
 .photo-button img {
@@ -131,6 +132,18 @@ h1 {
     display: block;
     border-radius: 8px;
     background: #ddd;
+    transition: transform 240ms cubic-bezier(.22, .61, .36, 1), filter 240ms ease;
+}
+
+.photo-button:hover img,
+.photo-button:focus-visible img {
+    transform: scale(1.035);
+    filter: brightness(1.02);
+}
+
+.photo-button:focus-visible {
+    outline: 2px solid var(--text);
+    outline-offset: 3px;
 }
 
 .lightbox {

@@ -3,5 +3,15 @@
     "id": "photowalk_blr",
     "title": "Photowalk, Bengaluru",
     "description": "Moments from a photowalk in Bengaluru"
+  },
+  {
+    "id": "mumbai",
+    "title": "Mumbai",
+    "description": "Street scenes and moments from Mumbai"
+  },
+  {
+    "id": "thai",
+    "title": "Thailand",
+    "description": "People, places and moments from Thailand"
   }
 ]

@@ -3,7 +3,7 @@
     "id": "photowalk_blr",
     "title": "Photowalk, Bengaluru",
     "description": "Moments from a photowalk in Bengaluru",
-    "cover": "images/gallery/_previews/photowalk_blr/BBT03018_preview.webp",
+    "cover": "images/gallery/_previews/photowalk_blr/BBT02879_cover.webp",
     "photos": [
       {
         "src": "images/gallery/photowalk_blr/BBT02879.jpg",
@@ -93,6 +93,220 @@
         "src": "images/gallery/photowalk_blr/BBT03149-2.jpg",
         "preview": "images/gallery/_previews/photowalk_blr/BBT03149-2_preview.webp",
         "alt": "Photowalk, Bengaluru — BBT03149 2",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "id": "mumbai",
+    "title": "Mumbai",
+    "description": "Street scenes and moments from Mumbai",
+    "cover": "images/gallery/_previews/mumbai/DSC_0002 (1)_cover.webp",
+    "photos": [
+      {
+        "src": "images/gallery/mumbai/DSC_0002 (1).jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0002 (1)_preview.webp",
+        "alt": "Mumbai — DSC 0002 (1)",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0003 (1).jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0003 (1)_preview.webp",
+        "alt": "Mumbai — DSC 0003 (1)",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0008 (1).jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0008 (1)_preview.webp",
+        "alt": "Mumbai — DSC 0008 (1)",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0122 (1).jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0122 (1)_preview.webp",
+        "alt": "Mumbai — DSC 0122 (1)",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0124 (1).jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0124 (1)_preview.webp",
+        "alt": "Mumbai — DSC 0124 (1)",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0138.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0138_preview.webp",
+        "alt": "Mumbai — DSC 0138",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0181.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0181_preview.webp",
+        "alt": "Mumbai — DSC 0181",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0216.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0216_preview.webp",
+        "alt": "Mumbai — DSC 0216",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0240.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0240_preview.webp",
+        "alt": "Mumbai — DSC 0240",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0281.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0281_preview.webp",
+        "alt": "Mumbai — DSC 0281",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0559.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0559_preview.webp",
+        "alt": "Mumbai — DSC 0559",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0587.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0587_preview.webp",
+        "alt": "Mumbai — DSC 0587",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0601.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0601_preview.webp",
+        "alt": "Mumbai — DSC 0601",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0623.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0623_preview.webp",
+        "alt": "Mumbai — DSC 0623",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0638 1.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0638 1_preview.webp",
+        "alt": "Mumbai — DSC 0638 1",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0663 1.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0663 1_preview.webp",
+        "alt": "Mumbai — DSC 0663 1",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0669 1.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0669 1_preview.webp",
+        "alt": "Mumbai — DSC 0669 1",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0680 1.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0680 1_preview.webp",
+        "alt": "Mumbai — DSC 0680 1",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0705 1.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0705 1_preview.webp",
+        "alt": "Mumbai — DSC 0705 1",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0711 1.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0711 1_preview.webp",
+        "alt": "Mumbai — DSC 0711 1",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0732 1.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0732 1_preview.webp",
+        "alt": "Mumbai — DSC 0732 1",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0766.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0766_preview.webp",
+        "alt": "Mumbai — DSC 0766",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0813.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0813_preview.webp",
+        "alt": "Mumbai — DSC 0813",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/mumbai/DSC_0815.jpg",
+        "preview": "images/gallery/_previews/mumbai/DSC_0815_preview.webp",
+        "alt": "Mumbai — DSC 0815",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "id": "thai",
+    "title": "Thailand",
+    "description": "People, places and moments from Thailand",
+    "cover": "images/gallery/_previews/thai/BBT08797_cover.webp",
+    "photos": [
+      {
+        "src": "images/gallery/thai/BBT08797.jpg",
+        "preview": "images/gallery/_previews/thai/BBT08797_preview.webp",
+        "alt": "Thailand — BBT08797",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/thai/BBT08815.jpg",
+        "preview": "images/gallery/_previews/thai/BBT08815_preview.webp",
+        "alt": "Thailand — BBT08815",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/thai/BBT08822.jpg",
+        "preview": "images/gallery/_previews/thai/BBT08822_preview.webp",
+        "alt": "Thailand — BBT08822",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/thai/BBT08836.jpg",
+        "preview": "images/gallery/_previews/thai/BBT08836_preview.webp",
+        "alt": "Thailand — BBT08836",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/thai/BBT08851.jpg",
+        "preview": "images/gallery/_previews/thai/BBT08851_preview.webp",
+        "alt": "Thailand — BBT08851",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/thai/BBT08862_1.jpg",
+        "preview": "images/gallery/_previews/thai/BBT08862_1_preview.webp",
+        "alt": "Thailand — BBT08862 1",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/thai/BBT08866.jpg",
+        "preview": "images/gallery/_previews/thai/BBT08866_preview.webp",
+        "alt": "Thailand — BBT08866",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/thai/BBT08900.jpg",
+        "preview": "images/gallery/_previews/thai/BBT08900_preview.webp",
+        "alt": "Thailand — BBT08900",
+        "caption": ""
+      },
+      {
+        "src": "images/gallery/thai/BBT09116.jpg",
+        "preview": "images/gallery/_previews/thai/BBT09116_preview.webp",
+        "alt": "Thailand — BBT09116",
         "caption": ""
       }
     ]
